@@ -31,7 +31,7 @@ switch (inputNumber)
     break;
 
     case 7:
-    Console.WriteLine("Понедельник");
+    Console.WriteLine("Воскресенье");
     break;
 
 }
@@ -45,6 +45,6 @@ switch (inputNumber)
 //    dayOfWeek[6] = "Воскресенье";
 
 
- //   Console.WriteLine(dayOfWeek[inputNumber-1]);
+//    Console.WriteLine(dayOfWeek[inputNumber-1]);
 
 }

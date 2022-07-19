@@ -1,0 +1,15 @@
+D:\бизнесаналитик\siminaryproger1\dztask2\bin\Debug\net6.0\dztask2.exe
+D:\бизнесаналитик\siminaryproger1\dztask2\bin\Debug\net6.0\dztask2.deps.json
+D:\бизнесаналитик\siminaryproger1\dztask2\bin\Debug\net6.0\dztask2.runtimeconfig.json
+D:\бизнесаналитик\siminaryproger1\dztask2\bin\Debug\net6.0\dztask2.dll
+D:\бизнесаналитик\siminaryproger1\dztask2\bin\Debug\net6.0\dztask2.pdb
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.csproj.AssemblyReference.cache
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.GeneratedMSBuildEditorConfig.editorconfig
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.AssemblyInfoInputs.cache
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.AssemblyInfo.cs
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.csproj.CoreCompileInputs.cache
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.dll
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\refint\dztask2.dll
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.pdb
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\dztask2.genruntimeconfig.cache
+D:\бизнесаналитик\siminaryproger1\dztask2\obj\Debug\net6.0\ref\dztask2.dll

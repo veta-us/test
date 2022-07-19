@@ -14,13 +14,5 @@ if(inputLkneOne != null && inputLkneTwo != null){
         Console.WriteLine("no");
     }
 
-if(inputNumberTwo == Math.Sqrt(inputNumberOne))
-{
-    Console.WriteLine("yes");
-}
-else
-{
-    Console.WriteLine("no");
-}
 }
 

@@ -4,8 +4,7 @@ if(inputLine != null)
 {
     int inputNumber = int.Parse(inputLine);
 
-    int outNumber = inputNumber*inputNumber;
 
-    Console.WriteLine(outNumber);
+    Console.WriteLine(inputNumber);
 
 }

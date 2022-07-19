@@ -1,6 +1,7 @@
 ﻿string? inputLineOne = Console.ReadLine();
 
-if(inputLineOne != null)
+if(inputLineOne != null) 
+
 {
     int inputNumber = int.Parse(inputLineOne);
 

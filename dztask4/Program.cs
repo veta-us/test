@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string? inputLineOne = Console.ReadLine();
+
+if(inputLineOne != null) 
+
+{
+    int inputNumber = int.Parse(inputLineOne);
+
+    int NumberTwo = 2;
+
+    string lineOutput = "";
+
+    while (NumberTwo < inputNumber)
+    {
+        lineOutput = lineOutput+NumberTWo+",";
+        NumberTwo = NumberTwo+2;
+    }
+     lineOutput=lineOutput+inputNumber;
+
+Console.WriteLine(lineOutput);
+}

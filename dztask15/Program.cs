@@ -18,4 +18,3 @@ else
 }
 
 
-// string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };

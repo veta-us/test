@@ -11,7 +11,7 @@ if(inputLineOne != null)
 
     while (NumberTwo < inputNumber)
     {
-        lineOutput = lineOutput+NumberTWo+",";
+        lineOutput = lineOutput+NumberTwo+",";
         NumberTwo = NumberTwo+2;
     }
      lineOutput=lineOutput+inputNumber;

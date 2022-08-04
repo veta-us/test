@@ -1,7 +1,7 @@
 ﻿Console.WriteLine("Введите трехзначное число");
 
 string? inputLine = Console.ReadLine();
-if(inputLine != null)
+ 
 {
    Char[] myArray = inputLine.ToCharArray();
 

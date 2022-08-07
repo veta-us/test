@@ -1,4 +1,5 @@
-﻿Console.Write("ВВедите число ");
+﻿Console.Clear();
+Console.Write("ВВедите число ");
 
 int inputNumber = int.Parse(Console.ReadLine());
 
@@ -22,6 +23,7 @@ void VariantGauss()
 Console.WriteLine("сумма чисел от 1 до " +  inputNumber + " = " + sumOfNumber);
 }
  
- 
+
  VariantSimple();
+
  VariantGauss();

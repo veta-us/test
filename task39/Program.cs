@@ -36,7 +36,7 @@ void PrintIntArray(int[] inputArray)
     Console.WriteLine(inputArray[i]);
 }
 
-int[] ReversNewArray(int [] array )
+int[] ReversNewArray(int [] array)
 
 {
     int length = array.Length;

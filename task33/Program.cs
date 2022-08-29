@@ -58,7 +58,7 @@ bool ColculateTask(int[] inputArray, int searchNumber)
 int[] bufferArray = FillingArray();
 PrintIntArray(bufferArray);
 Console.WriteLine("Введите число для поиска:");
-int searchNumber= int.Parse(Console.ReadLine()); // пользователь вводит число, и преобразовывает его 
+int searchNumber = int.Parse(Console.ReadLine()); // пользователь вводит число, и преобразовывает его 
 
 Console.WriteLine(ColculateTask(bufferArray, searchNumber));
 

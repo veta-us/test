@@ -56,11 +56,30 @@ void PrintColorTwoDimArray(int[,] inputArray) // метод раскрашива
    Console.Write("\n");
     i++; 
 } 
+}
 
-
+void UpdateTwoDimArray(ref int[,] inputArray)
+{
+    int i = 0; int j =0;
+    
+    while (i < inputArray.GetLength(0)) // два цикла, пока не заполним столбцы и строчки
+{
+    j = 0;
+   while (j < inputArray.GetLength(1))
+   {
+    inputArray[i,j] = i+j;
+    j++;
+   }
+  
+    i++; 
+} 
 }
 
 
 int[,] twoDimArray = FillTwoDimArray(5,8);
-PrintTwoDimArray(twoDimArray);
+
 PrintColorTwoDimArray(twoDimArray);
+UpdateTwoDimArray(ref twoDimArray);
+
+PrintColorTwoDimArray(twoDimArray);
+

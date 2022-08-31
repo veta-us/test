@@ -1,6 +1,6 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 Console.WriteLine("Введите числа");
-int m = int.Parse(Console.ReadLine());  // вот где-то в начале я не могу разобраться с этими переменными!!!!! 
+int m = int.Parse(Console.ReadLine());  // вот где-то в начале я не могу разобраться с этими переменными
 int[] num = new int[m];
 int[] Read(int m) // метод считывает м, который вводит пользователь и возвращает заполненный массив buferarray
 
@@ -9,7 +9,7 @@ int[] Read(int m) // метод считывает м, который вводи
     int i = 0;
     while (i < m)
     {
-       buferarray[i] = int.Parse(Console.ReadLine()); // эта строчка по идее, 
+       buferarray[i] = int.Parse(Console.ReadLine()); 
        i++;
     }
     return buferarray;

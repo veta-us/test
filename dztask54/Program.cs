@@ -1,8 +1,7 @@
-﻿//.................
-//Задайте двумерный массив из целых чис­ел. Найдите среднее арифметическое элеме­нтов 
-//в каждом столбце.
-//...........
-  
+﻿// Задача 54. Домашнее задание.
+// Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+// Например, задан массив:
+
 // метод для заполне­ния двумерного масси­ва
 int[,] FillTwoDimArray(int countRow, int countColumn)
 {
@@ -19,32 +18,10 @@ int[,] FillTwoDimArray(int countRow, int countColumn)
                   j++;
             }
             i++;
-      } 
+      }
       return outArray;
 }
-  
-// Метод подсчета ср­еднего арифметическо­го каждого столбца
-double CalcAverage(int[,] inputArray)
-{
-      double outAverageColumn = 0;
-      int j = 0;
-      while (j < inputArray.GetLength(1))
-      {
-            int i = 0;
-            outAverageColumn = 0;
-            while (i < inputArray.GetLength(0))
-            {
-                  outAverageColumn = outAverageColumn + inputArray[i, j];
-                  i++;
-            }
-            outAverageColumn = outAverageColumn / inputArray.GetLength(0);
-            Console.Write(Math.Round(outAverageColumn, 2) + "; ");
-            j++;
-      }
-  
-      return outAverageColumn;
-}
-  
+
 ConsoleColor[] col = new ConsoleColor[] { ConsoleColor.Black, ConsoleColor.DarkBlue, ConsoleColor.DarkGreen, ConsoleColor.DarkCyan, ConsoleColor.DarkRed, ConsoleColor.Gray, ConsoleColor.Blue, ConsoleColor.Green };
 
   
@@ -67,8 +44,44 @@ void PrintColorTwoDimArray(int[,] inputArray)
             i++;
       }
 }
+
+int [,] Filter(int [,] inputArray) // метод меняет местами первую и последюю строчки
+{ 
+int i = 0; int j = 0;
   
-int[,] twoDimArray = FillTwoDimArray(7, 5);
-PrintColorTwoDimArray(twoDimArray);
-Console.Write($"\nCреднее арифметическ­ое:\n");
-CalcAverage(twoDimArray);
+      while (i < inputArray.GetLength(0))
+      {
+            j = 0;
+            int[] b = new int[i];
+            while (j < inputArray.GetLength(1))
+            {
+                 b = inputArray[i];
+                  j++;
+            }
+            Console.Write("\n");
+            Array.Sort(b);
+            j = 0; 
+            while (j < inputArray.GetLength(1))
+            {
+                 inputArray = b[i];
+                 j++;
+            }
+         
+            i++;
+      }
+    return inputArray;
+
+}
+
+int[,] bufferArray = FillTwoDimArray(3,5);
+PrintColorTwoDimArray(bufferArray);
+int [,] resultarray = Filter(bufferArray);
+PrintColorTwoDimArray(resultarray);
+
+
+
+
+
+ 
+            
+            

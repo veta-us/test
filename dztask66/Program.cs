@@ -1,4 +1,9 @@
-﻿// метод считывает число, введенное пользователем 
+﻿// Задайте значения M и N. Напишите программу,Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+
+int sum = 0;
+
+// метод считывает число, введенное пользователем 
 int  ReadDataStart()
 {
     Console.WriteLine("Задайте начало отрезка: "); // просим ввести число
@@ -12,20 +17,24 @@ int  ReadDataFinish()
 }
 
 
-
 // метод выдает натуральные числа в промежутке от M до N, которые ввел пользователь 
-void NuturalNumber(int num1, int num2)
+int NuturalNumberSum(int num1, int num2)
 {
-    if(num1-1 == num2) return; 
-    else
-    {
-      Console.Write(num1);
-      NuturalNumber(num1+1, num2);
-    }
-    
+    if(num1-1 == num2) return sum; 
+
+    sum = sum + num1;
+    NuturalNumberSum(num1 +1, num2);
+    return sum;
+}
+
+void PrintSum()
+{
+    Console.WriteLine(sum);
 }
 
 
+// Вызов методов
 int inputNumber1 =  ReadDataStart();
 int inputNumber2 =  ReadDataFinish();
-NuturalNumber(inputNumber1, inputNumber2);
+NuturalNumberSum(inputNumber1, inputNumber2);
+PrintSum();

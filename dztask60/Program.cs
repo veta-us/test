@@ -1,28 +1,25 @@
-﻿int[,,] FillTwoDimArray(int A, int B, int C)
+﻿int[,,] Fill3DimArray(int A, int B, int C)
 {
-      System.Random numberSyntezator = new System.Random();
-      int i = 0;
-      int j = 0;
-      int k =0;
-      int[,,] outArray = new int[A, B, C];
-      while (i < A)
-      {
-            j = 0;
-            while (j < B)
+    System.Random numberSyntezator = new System.Random();
+    int[,,] array3D = new int[A, B, C];
+
+    for (int i = 0; i < array3D.GetLength(0); i++)
+    {
+        for (int j = 0; j < array3D.GetLength(1); j++)
+        {
+            for (int k = 0; k < array3D.GetLength(2); k++)
             {
-                 while (k < C)
-                 {
-                  outArray[i, j, k] = numberSyntezator.Next(0, 101);
-                  k++;
-                 }
-                  j++;
+                array3D[i, j, k] = numberSyntezator.Next(0,100);
             }
-            i++;
-      } 
-      return outArray;
+
+        }
+    }
+    return array3D;
+
 }
 
 
 
-int[,,] array3D = FillTwoDimArray(2, 2, 2);
+
+int[,,] array3D = Fill3DimArray(2, 2, 2);
 Console.WriteLine(array3D);

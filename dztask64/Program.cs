@@ -1,4 +1,6 @@
-﻿// метод считывает число, введенное пользователем 
+﻿//Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+
+// метод считывает число, введенное пользователем 
 int  ReadDataStart()
 {
     Console.WriteLine("Задайте начало отрезка: "); // просим ввести число
@@ -11,8 +13,6 @@ int  ReadDataFinish()
     return int.Parse(Console.ReadLine());// возвращаем число, которое ввел пользователь. при этом делаем преобразование Parse
 }
 
-
-
 // метод выдает натуральные числа в промежутке от M до N, которые ввел пользователь 
 void NuturalNumber(int num1, int num2)
 {
@@ -24,7 +24,6 @@ void NuturalNumber(int num1, int num2)
     }
     
 }
-
 
 int inputNumber1 =  ReadDataStart();
 int inputNumber2 =  ReadDataFinish();

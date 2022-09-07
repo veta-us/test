@@ -5,9 +5,7 @@ int  ReadData()
     return int.Parse(Console.ReadLine());// возвращаем число, которое ввел пользователь. при этом делаем преобразование Parse
 }
 
-//  стек 
-// 1 число 3 на вход
-// 2 попадет 2, она войдет в int NuturalNumber(int num) и вернет 1 
+
 
 
 int NuturalNumber(int num)
